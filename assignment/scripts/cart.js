@@ -62,5 +62,5 @@ function removeItem( item ) {
 }
 console.log( removeItem( 'potatos' ) );
 console.log( removeItem( 'chips' ) );
-console.log( basket );
+console.log( basket ); 
 
