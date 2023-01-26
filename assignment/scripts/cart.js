@@ -31,12 +31,13 @@ function listItems() {
 
 listItems();
 
-function empty() {
-    basket = [];
-}
 
-empty( basket );
-console.log( basket );
+// function empty() {
+//    basket = [];
+// }
+
+// empty( basket );
+// console.log( basket );
 
 // STRETCH PROBLEMS
 
@@ -48,6 +49,18 @@ function isFull() {
     }
 }
 
+console.log( basket );
+
 function removeItem( item ) {
-    
+    let index = basket.indexOf( item );
+    if ( index !== -1 ) {
+        basket.splice( index, 1 );
+        return `${item} was removed`
+    } else {
+        return `null`
+    }
 }
+console.log( removeItem( 'potatos' ) );
+console.log( removeItem( 'chips' ) );
+console.log( basket );
+
